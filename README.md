@@ -1,6 +1,6 @@
 # dark_instagram_clone
 
-Dark Instagram Clone by Daff. Currently developing home page. Other screens is coming soon.
+Dark Instagram Clone by Daff. Currently developing home page. Other screens are coming soon.
 
 ## Screenshot
 
