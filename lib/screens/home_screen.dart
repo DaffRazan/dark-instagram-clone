@@ -133,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 10,
                 ),
                 const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 1),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Text(
                       'View all 4.000 comments',
                       style: TextStyle(color: Colors.grey),
