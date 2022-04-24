@@ -27,12 +27,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                   child: Row(
                     children: [
-                      Center(
-                        child: Image.asset(
-                          'assets/images/post_creator1.png',
-                          height: 32,
-                          width: 32,
-                        ),
+                      Image.asset(
+                        'assets/images/post_creator1.png',
+                        height: 32,
+                        width: 32,
                       ),
                       const SizedBox(
                         width: 10,
@@ -59,8 +57,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                Image.asset('assets/images/post_image1.png',
-                    width: 375, height: 375),
+                GestureDetector(
+                  onDoubleTap: () {
+                    setState(() {
+                      (isPostLiked == false)
+                          ? isPostLiked = true
+                          : isPostLiked = false;
+                    });
+                  },
+                  child: Image.asset('assets/images/post_image1.png',
+                      width: double.infinity, height: 375),
+                ),
                 const SizedBox(
                   height: 10,
                 ),
@@ -126,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 10,
                 ),
                 const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 1),
                     child: Text(
                       'View all 4.000 comments',
                       style: TextStyle(color: Colors.grey),
